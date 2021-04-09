@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block content %}
+
+<table border="2px solid" style="align: center" class="tables">
+{% for i in res %}
+        <tr><td>{{ i[0] }}</td><td>{{ i[1] }}</td><td>{{ i[2] }}</td><td>{{ i[3] }}</td><td>{{ i[4] }}</td><td>{{ i[5] }}</td></tr>
+{% endfor %}
+    </table>
+{% endblock %}

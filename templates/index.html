@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+
+        .header11{display: inline-block;width: 50%;text-align: center}
+        .header12{display: inline-block;width: 49%}
+        .header21{display: inline-block;width: 50%;text-align: center}
+        .header22{display: inline-block;width: 49%}
+        .button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+ .tables {
+  margin-left: auto;
+  margin-right: auto;
+}
+    </style>
+
+
+</head>
+<body>
+<h1 style="text-align: center;font-weight: bold; color: blue"> Chit Fund Management System </h1>
+<div class="header1">
+
+<div class="header11">
+<a href="/add">Add New Member</a>
+</div>
+<div class="header12">
+<a href="/payments">Payments</a>
+</div>
+</div>
+<div class="header2">
+<div class="header21">
+<form action="/GroupDetails" method="post">
+    <labe>Group Details:</labe>
+    <select id="groupDetails" name="groupDetails">
+        <option value="Group1">Group1</option>
+        <option value="Group2">Group2</option>
+
+    </select>
+    <input type="submit" class="button" vaue="Submit">
+</form>
+</div>
+<div class="header22">
+    <form action="/MemberDetails" method="post">
+    <labe>Member Details:</labe>
+    <input type="text" placeholder="Enter the name" name="member">
+    <input type="submit" class="button" vaue="Submit">
+</form>
+</div>
+
+    </div>
+<div class="result">
+<br/><br/>
+{% block content %}
+{% endblock %}
+
+</div>
+</body>
+
+
+
+
+</html>

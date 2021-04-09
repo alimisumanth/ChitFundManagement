@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block content %}
+    <table border="2px solid" style="align: center" class="tables">
+        <tr><td>SL. NO</td><td>Name</td><td>Total Months</td><td>Remaining Months</td><td>Amount Paid</td></tr>
+{% for i in members %}
+        <tr><td>{{ i[0] }}</td><td>{{ i[1] }}</td><td>{{ i[2] }}</td><td>{{ i[3] }}</td><td>{{ i[4] }}</td></tr>
+{% endfor %}
+    </table>
+{% endblock %}
+
